@@ -1232,6 +1232,7 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
 </section>
 
+<!--Blogs-->
 <section id="blog" class="bg-gray-50 py-8 px-4 md:px-6 lg:px-12">
   <div class="max-w-7xl mx-auto text-center mb-8">
     <h2 class="text-4xl font-semibold text-gray-900 mb-4">Latest Blog Posts</h2>
@@ -1261,73 +1262,113 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
 </section>
 
-<!--Contact Form Section --> 
+<!-- ✅ Contact Form Section -->
 <section id="contact" class="relative z-20 py-20 bg-gradient-to-br from-indigo-50 via-white to-indigo-100">
   <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-  
+    
     <!-- Title -->
     <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 mb-4">Get in Touch</h2>
-      <p class="text-lg text-gray-600">Have a question or want to collaborate? We'd love to hear from you.</p>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Get in Touch</h2>
+      <p class="text-lg text-gray-600 w-full mx-auto">
+       Have a question, a collaboration idea, or just want to say hello? Fill out the form below and we'll get back to you shortly.
+    </p>
     </div>
-    
-    <div class="max-w-3xl mx-auto bg-gray-50 p-8 rounded-xl shadow-md">
-      <form id="contact-form" class="space-y-6"> 
-        <input type="hidden" name="access_key" value="70cdf0fc-a009-41bb-9b08-ddb88d4ea21e"> 
-        <input type="hidden" name="replyto" value="info.innovigyan@gmail.com"/>
 
-        <!-- Name -->
-        <div> 
-          <label for="name" class="block text-lg font-medium text-gray-700 mb-2">Name</label> 
-          <input type="text" id="name" name="name" placeholder="Your Name" 
-                 class="w-full px-4 py-3 border border-gray-300 rounded-lg 
-                 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200" 
-                 required> 
-        </div> 
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+      
+      <!-- Left Side: Contact Form -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300">
+        <form id="contact-form" class="space-y-6">
+          <input type="hidden" name="access_key" value="70cdf0fc-a009-41bb-9b08-ddb88d4ea21e"> 
+          <input type="hidden" name="replyto" value="info.innovigyan@gmail.com"/>
 
-        <!-- Mobile Number -->
-        <div>
-          <label for="phone" class="block text-lg font-medium text-gray-700 mb-2">Mobile Number</label> 
-          <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" 
-                 pattern="[0-9]{10}" 
-                 class="w-full px-4 py-3 border border-gray-300 rounded-lg 
-                 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200" 
-                 required> 
-        </div>
+          <!-- Name -->
+          <div>
+            <label for="name" class="block text-lg font-medium text-gray-700 mb-2">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200"
+              required>
+          </div>
 
-        <!-- Message -->
-        <div>
-          <label for="message" class="block text-lg font-medium text-gray-700 mb-2">Message/Query</label> 
-          <textarea id="message" name="message" rows="5" 
-                    placeholder="Tell us about your query or project..." 
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg 
-                    focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200" 
-                    required></textarea>
-        </div>
+          <!-- Mobile -->
+          <div>
+            <label for="phone" class="block text-lg font-medium text-gray-700 mb-2">Mobile Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number"
+              pattern="[0-9]{10}"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200"
+              required>
+          </div>
 
-        <!-- Submit Button -->
-        <div class="text-center">
-          <button type="submit" 
-                  class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg 
-                  hover:bg-indigo-700 transform hover:scale-105 transition duration-300 ease-in-out">
-            Send Message 
-          </button> 
-        </div> 
-      </form>
+          <!-- Message -->
+          <div>
+            <label for="message" class="block text-lg font-medium text-gray-700 mb-2">Message/Query</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your query or project..."
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200"
+              required></textarea>
+          </div>
 
-      <!-- Success/Error Message -->
-      <div id="contact-message" class="mt-6 p-4 rounded-lg text-center hidden"></div> 
+          <!-- Submit -->
+          <div class="text-center">
+            <button type="submit"
+              class="bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transform hover:scale-105 transition duration-300 ease-in-out">
+               Send Message
+            </button>
+          </div>
+        </form>
 
-      <!-- Contact Info -->
-      <div class="mt-8 text-center text-lg text-gray-700"> 
-        <p class="mb-2">Mail: 
-          <a href="mailto:info.innovigyan@gmail.com" 
-             class="text-indigo-600 hover:underline">info.innovigyan@gmail.com</a>
-        </p> 
-        <p>Call: +91 7620653836 / +91 9860528788 </p> 
-      </div> 
-    </div> 
-  </div> 
+        <!-- Success/Error -->
+        <div id="contact-message" class="mt-6 p-4 rounded-lg text-center hidden"></div>
+      </div>
+
+      <!-- Right Side: Contact Info -->
+<div class="space-y-6 text-center lg:text-left flex flex-col h-full">
+  <h3 class="text-2xl font-semibold text-gray-800">Let's Connect</h3>
+  <p class="text-gray-600 leading-relaxed">
+    You can also reach us directly via email, phone, or visit us at our location.
+  </p>
+  
+  <div class="space-y-4 flex-grow">
+    <!-- Email -->
+    <p class="flex items-center justify-center lg:justify-start text-lg text-gray-700 bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition">
+      <span class="bg-indigo-100 p-3 rounded-full mr-3 text-indigo-600">📧</span>
+      <a href="mailto:info.innovigyan@gmail.com" class="hover:text-indigo-700">info.innovigyan@gmail.com</a>
+    </p>
+
+    <!-- Phone -->
+    <p class="flex items-center justify-center lg:justify-start text-lg text-gray-700 bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition">
+      <span class="bg-indigo-100 p-3 rounded-full mr-3 text-indigo-600">📞</span>
+      +91 7620653836 / +91 9860528788
+    </p>
+
+    <!-- Location -->
+<p class="flex items-center justify-center lg:justify-start text-lg text-gray-700 bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition">
+  <span class="bg-indigo-100 p-3 rounded-full mr-3 text-indigo-600">
+    <!-- Location Pin Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5 9 6.343 9 8s1.343 3 3 3z" />
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M12 22s8-7.58 8-14A8 8 0 004 8c0 6.42 8 14 8 14z" />
+    </svg>
+  </span>
+  Pune, Maharashtra, India
+</p>
+
+
+    <!-- Our Promise -->
+    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition text-left">
+      <h4 class="text-lg font-semibold text-gray-800 flex items-center mb-2">
+        <span class="bg-indigo-100 p-2 rounded-full mr-2 text-indigo-600">🌟</span>
+        Our Promise
+      </h4>
+      <ul class="space-y-1 text-gray-700 text-base">
+        <li class="flex items-center"><span class="mr-2">✅</span> Friendly Support</li>
+        <li class="flex items-center"><span class="mr-2">✅</span> Reliable Service</li>
+        <li class="flex items-center"><span class="mr-2">✅</span> Transparent Communication</li>
+      </ul>
+    </div>
+  </div>
+</div>
 </section>
 
 <script>
@@ -1335,10 +1376,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('contact-form');
   const messageBox = document.getElementById('contact-message');
 
-  if (!form || !messageBox) return; // Prevent errors if not found
+  if (!form || !messageBox) return;
 
   form.addEventListener('submit', async function (event) {
-    event.preventDefault(); // Prevent page reload
+    event.preventDefault();
     const formData = new FormData(form);
 
     try {
@@ -1350,24 +1391,20 @@ document.addEventListener('DOMContentLoaded', function () {
       const result = await response.json();
 
       if (result.success) {
-        messageBox.textContent = "Thank you for your message! We will get back to you shortly.";
+        messageBox.textContent = "✅ Thank you for your message! We’ll get back to you soon.";
         messageBox.className = "mt-6 p-4 bg-green-100 text-green-800 rounded-lg text-center";
         form.reset();
       } else {
-        messageBox.textContent = "Oops! Something went wrong. Please try again later.";
+        messageBox.textContent = "⚠️ Oops! Something went wrong. Please try again later.";
         messageBox.className = "mt-6 p-4 bg-red-100 text-red-800 rounded-lg text-center";
       }
     } catch (error) {
-      messageBox.textContent = "Error submitting form. Please check your connection.";
+      messageBox.textContent = "❌ Error submitting form. Please check your connection.";
       messageBox.className = "mt-6 p-4 bg-red-100 text-red-800 rounded-lg text-center";
     }
 
     messageBox.classList.remove('hidden');
-
-    // Hide after 5s
-    setTimeout(() => {
-      messageBox.classList.add('hidden');
-    }, 5000);
+    setTimeout(() => messageBox.classList.add('hidden'), 5000);
   });
 });
 </script>
