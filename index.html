@@ -263,7 +263,7 @@
   <div class="relative z-20 max-w-xl px-6">
     <h1 class="flex items-center justify-center text-4xl font-extrabold mb-4 text-white tracking-wide drop-shadow-lg gap-2">
      INN
-     <img src="cropped_circle_image180.png" alt="InnoVigyan Logo" class="w-8 h-8 md:w-10 md:h-10" />
+     <img src="cropped_circle_image18.png" alt="InnoVigyan Logo" class="w-8 h-8 md:w-10 md:h-10" />
      VIGYAN
     </h1>
 
@@ -1021,14 +1021,40 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-<!-- Responsive Video Section --> 
- <div class="py-8 text-center"> 
+<!-- Responsive Video Section -->
+
+<div class="py-8 text-center">
+
   <h3 class="text-xl md:text-3xl font-semibold mb-10">Watch InnoVigyan - Quick Intro</h3>
-   <div class="max-w-6xl mx-auto flex justify-center">
-     <iframe width="1500" height="450" src="https://www.youtube.com/embed/8jmHE6HxrJM?start=2" title="Watch InnoVigyan - Quick Intro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-     </iframe> 
-    </div> 
-  </div> 
+
+  <!-- Desktop Video (hidden on small/mobile) -->
+  <div class="hidden sm:block max-w-6xl mx-auto">
+    <div class="relative w-full pb-[28.125%]"> <!-- 16:9 aspect ratio (450px/1600px ≈ 0.28125) -->
+      <iframe
+        class="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/8jmHE6HxrJM?start=2"
+        title="Watch InnoVigyan - Quick Intro"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Mobile Video (visible only on mobile) -->
+  <div class="sm:hidden max-w-full mx-auto px-4">
+    <div class="relative w-full pb-[56.25%]"> <!-- 16:9 aspect ratio -->
+      <iframe
+        class="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/8jmHE6HxrJM?start=2"
+        title="Watch InnoVigyan - Quick Intro"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
 </div>
 
 <!-- ✅ Testimonials Section -->
