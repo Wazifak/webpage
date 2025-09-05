@@ -95,19 +95,20 @@
         }
 
         .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 30px;
-            border-radius: 0.75rem; /* rounded-xl */
-            width: 90%;
-            max-width: 900px;
-            box-shadow: 0 10px 25px rgba(35, 25, 216, 0.25),
-                0 4px 10px rgba(79, 70, 229, 0.15); /* Indigo shadow */
-            position: relative;
-            max-height: 90vh;
-            overflow-y: auto;
+           background-color: #fefefe;
+           margin: auto;
+           padding: 30px;
+           border-radius: 0.75rem; /* rounded-xl */
+           width: 90%;
+           max-width: 900px;
+           box-shadow: 
+             0 10px 25px rgba(35, 25, 216, 0.25),  /* Indigo blue shadow */
+             0 4px 10px rgba(79, 70, 229, 0.15);   /* Lighter indigo shadow */
+           position: relative;
+           max-height: 90vh;
+           overflow-y: auto;
         }
-
+        
         .close-button {
             color: #aaa;
             position: absolute;
@@ -221,25 +222,27 @@
 
 <!-- Hero Section -->
 <section id="home"
-  class="relative min-h-[90vh] flex flex-col items-center justify-center bg-cover bg-center bg-scroll text-center pt-4 pb-4 md:pt-8 md:pb-8"
+  class="relative min-h-[90vh] flex flex-col items-center justify-center bg-cover bg-center bg-fixed pt-8 pb-8 text-center"
   style="background-image: url('homepage.png');">
 
   <!-- Overlay -->
   <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60"></div>
 
   <!-- Content -->
-  <div class="relative z-20 px-6 md:px-12 lg:px-24">
-    <h1 class="text-5xl md:text-7xl font-extrabold mb-6 text-white tracking-wide drop-shadow-lg">
-      INNOVIGYAN
+  <div class="relative z-20 max-w-4xl px-6 md:px-12 lg:px-24 flex flex-col items-center justify-center">
+    <h1 class="text-8xl md:text-8xl font-extrabold mb-6 -mt-8 text-white tracking-wide drop-shadow-lg">
+       INNOVIGYAN
     </h1>
-    <p class="text-xl md:text-2xl font-medium mb-6 text-gray-200">
+
+    <p class="text-xl md:text-2xl font-semibold mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
       Ideas • Innovation • Counselling • Skills Enhancement
     </p>
     <a href="#programs"
-       class="inline-block bg-indigo-600 text-white hover:bg-indigo-700 font-semibold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+       class="inline-block bg-indigo-600 text-white hover:bg-indigo-700 font-semibold py-3 px-10 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
       Explore Our Programs
     </a>
   </div>
+</section>
 
   <!-- Scroll Indicator -->
   <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white opacity-80 animate-bounce z-30">
@@ -261,9 +264,9 @@
     </h2>
 
     <!-- Description -->
-    <div class="max-w-3xl mx-auto text-center text-gray-600 mt-6 mb-12">
+    <div class="max-w-7xl mx-auto text-center text-gray-600 mt-6 mb-12">
     <p class="leading-relaxed text-base md:text-lg">
-    <span class="text-blue-600 font-semibold">Inno</span><span class="text-orange-500 font-semibold">Vigyan</span> = Innovation + Vigyan (Science). It's a dedicated platform to upskill oneself in a scientific, smarter, and more effective way.
+    <span class="text-blue-600 font-semibold">Inno</span><span class="text-orange-500 font-semibold">Vigyan</span> = InnoVigyan - where Innovation meets Vigyan (Science). We are a dedicated platform designed to help learners, students, and professionals upskill in a scientific, smarter, and more effective way. By combining innovative approaches with evidence-based methods, InnoVigyan empowers you to build the skills, confidence, and mindset needed to thrive in academics, careers, and life.
     </p>
     </div>
 
@@ -363,9 +366,8 @@
 <!-- ✅ Supporting Team -->
 <section id="supported-team" class="relative z-20 bg-white py-4 md:py-10">
   <div class="container mx-auto px-2 md:px-4 lg:px-6">
-    <p class="text-center text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-      Supported by a team of experts including <b>Pune University Gold Medalists, Trainers, Counselors, Mentors, Coaches,</b> 
-      and professionals from diversified domains.
+    <p class="text-center text-lg text-gray-700 max-w-6xl mx-auto leading-relaxed mb-6">
+      Supported by a distinguished team of experts, including <b>Pune University Gold Medalists, certified trainers, counselors, mentors, coaches, and professionals from diverse domains</b>.
     </p>
   </div>
 </section>
@@ -396,8 +398,8 @@
         <div class="text-indigo-600 mb-4 text-5xl flex justify-center">📘</div> 
         <h3 class="text-xl font-semibold text-center mb-4">Study Skills & Exam Preparation</h3> 
         <p class="text-gray-600 text-center mb-4"> A practical course designed to teach students effective study techniques, memory strategies, and smart exam preparation methods to boost academic performance. </p> 
-        <ul class="list-disc list-inside text-sm text-gray-600 text-left mb-4"> <li>Effective note-taking & time management</li> 
-          <li>Active recall & revision techniques</li> 
+        <ul class="list-disc list-inside text-sm text-gray-600 text-left mb-4"> <li>Active recall & revision techniques</li> 
+          <li>Effective note-taking & time management</li> 
           <li>Overcoming exam fear & anxiety</li> 
           <li>Strategies for better concentration</li> 
         </ul> 
@@ -429,7 +431,7 @@
              <li>Career exploration & planning</li> 
              <li>Communication & interview skills</li> 
              <li>Personality development</li> 
-             <li>Professional grooming & etiquette</li> 
+             <li>Professional grooming & leadership skills</li> 
              </ul> 
              <a href="program-career-counseling.html" target="_blank" class="block text-center mt-4 bg-indigo-600 text-white font-bold py-2 px-4 rounded-full shadow-md hover:bg-indigo-700 transform hover:scale-105 transition duration-300"> View Details </a> 
              </div> 
@@ -437,7 +439,7 @@
               <!-- Program Card 5 --> 
               <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 cursor-pointer program-card" data-program="early-childhood"> 
                 <div class="text-indigo-600 mb-4 text-5xl flex justify-center">👶</div>
-                 <h3 class="text-xl font-semibold text-center mb-4">Early Childhood Development & Parenting Skills</h3> 
+                 <h3 class="text-xl font-semibold text-center mb-4">Early Childhood Development & Parenting </h3> 
                  <p class="text-gray-600 text-center mb-4"> 
                    A specialized program for parents and educators to understand child psychology, milestones, and effective parenting strategies. </p> 
                    <ul class="list-disc list-inside text-sm text-gray-600 text-left"> 
@@ -452,15 +454,14 @@
 
                  <!-- Program Card 6 --> 
                  <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 cursor-pointer program-card" data-program="memory-enhancement"> 
-                 <div class="text-indigo-600 mb-4 text-5xl flex justify-center">🧠</div> 
-                 <h3 class="text-xl font-semibold text-center mb-4">Other Programs</h3> 
+                 <div class="text-indigo-600 mb-4 text-5xl flex justify-center">🚀</div> 
+                 <h3 class="text-xl font-semibold text-center mb-4">Other in demand Programs</h3> 
                  <p class="text-gray-600 text-center mb-4">
-                   Strengthen memory power using scientific techniques, brain exercises, and recall strategies to boost learning and retention. </p> 
-                   <ul class="list-disc list-inside text-sm text-gray-600 text-left">
-                     <li>Memory techniques (Mnemonics, Visualization, Mind Mapping)</li>
-                      <li>Concentration & focus improvement</li>
-                       <li>Speed learning & recall strategies</li>
-                        <li>Retaining information for exams & life</li> 
+                    Unleash your true potential with our top-rated, in-demand programs. Expertly crafted by industry leaders to fuel your growth and success.                   <ul class="list-disc list-inside text-sm text-gray-600 text-left">
+                     <li>Advanced Memory Enhancement</li>
+                      <li>Strategic Leadership Skills</li>
+                       <li>Professional Interview Preparation</li>
+                        <li>Innovations & Creativity Enhancement</li> 
                    </ul>
                    <a href="program-many-more.html" target="_blank" class="block text-center mt-4 bg-indigo-600 text-white font-bold py-2 px-4 rounded-full shadow-md hover:bg-indigo-700 transform hover:scale-105 transition duration-300"> View Details </a> 
                    </div> 
@@ -553,10 +554,9 @@ document.addEventListener('DOMContentLoaded', () => {
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">
       Glimpses of Our Journey
     </h2>
-    <p class="text-lg text-center mb-6 max-w-3xl mx-auto text-gray-700">
-      A look at our achievements, workshops, and the vibrant moments from our journey so far.
+    <p class="text-lg text-center max-w-6xl mx-auto mb-6 text-gray-700 leading-relaxed">
+     From impactful workshops to proud achievements - here's a glimpse into our journey so far, filled with innovation, learning, and unforgettable moments that continue to inspire us forward.
     </p>
-
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
       
       <!-- Awards -->
@@ -684,8 +684,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <button onclick="nextSlide('studentsSlider')" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black bg-opacity-40 text-white rounded-full p-1 text-xs">&#10095;</button>
         </div>
         <div class="p-4">
-          <p class="text-md font-semibold text-gray-800">Student Success Stories</p>
-          <p class="text-sm text-gray-600">Our students achieving greatness.</p>
+          <p class="text-md font-semibold text-gray-800">Student Success & love</p>
+          <p class="text-sm text-gray-600">Our students showcasing appreciations.</p>
         </div>
       </div>
 
@@ -830,7 +830,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <h3 class="text-2xl font-semibold text-indigo-700 mb-4 text-center group-hover:text-indigo-900 transition-colors font-display">Expert-Led Courses</h3>
         <ul class="list-disc list-inside text-gray-700 space-y-2 text-base leading-relaxed text-left">
           <li>Focused, Practical Curriculum</li>
-          <li>Result-Oriented Projects</li>
+          <li>Result-Oriented programs</li>
           <li>Prepared by Industry Leaders</li>
           <li>Proven Methodologies</li>
         </ul>
@@ -1109,8 +1109,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
     <!-- Title -->
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Seminars & Webinars</h2>
-    <p class="text-lg text-center mb-12 max-w-3xl mx-auto text-gray-700">
-      We conduct expert sessions and seminar/webinars on multiple topics with a team of professionals.
+    <p class="text-lg text-center mb-12 max-w-6xl mx-auto text-gray-700 leading-relaxed">
+     We conduct expert-led sessions and engaging seminars/webinars on diverse topics, powered by a team of seasoned professionals.
     </p>
 
     <!-- Grid -->
@@ -1173,29 +1173,17 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
 </section>
 
-<!-- ✅ Blog Section -->
-<section id="blog" class="bg-gray-50 py-8 px-2 md:px-4 lg:px-6">
-  <div class="max-w-7xl mx-auto text-center mb-6">
+<section id="blog" class="bg-gray-50 py-8 px-4 md:px-6 lg:px-12">
+  <div class="max-w-7xl mx-auto text-center mb-8">
     <h2 class="text-4xl font-semibold text-gray-900 mb-4">Latest Blog Posts</h2>
-    <p class="text-gray-600 max-w-xl mx-auto">
+    <p class="text-gray-600 max-w-xl mx-auto text-lg leading-relaxed">
       Stay updated with insights and news from InnoVigyan.
     </p>
   </div>
 
-  <!-- Two Equal Columns Layout -->
-  <div class="grid grid-cols-2 gap-6 max-w-full mx-auto">
-
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-full mx-auto">
     <!-- Blog Post 1 -->
-    <article class="bg-white p-6 rounded-2xl shadow transition-shadow duration-300 hover:shadow-xl transform hover:-translate-y-1 cursor-pointer">
-      <h3 class="text-2xl font-semibold text-indigo-600 hover:underline">
-        <a href="blog-swap-screen-for-stories.html" target="_blank" rel="noopener noreferrer" aria-label="Read Blog: Swap Screens for Stories">
-          Swap Screens for Stories: Creative Ways to Make Kids Fall in Love with Reading.
-        </a>
-      </h3>
-    </article>
-
-    <!-- Blog Post 2 -->
-    <article class="bg-white p-6 rounded-2xl shadow transition-shadow duration-300 hover:shadow-xl transform hover:-translate-y-1 cursor-pointer">
+    <article class="bg-white p-6 rounded-2xl shadow transition-shadow duration-300 hover:shadow-xl transform motion-safe:hover:scale-105 cursor-pointer">
       <h3 class="text-2xl font-semibold text-indigo-600 hover:underline">
         <a href="blog-dmit-complete-guide.html" target="_blank" rel="noopener noreferrer" aria-label="Read Blog: DMIT Complete Guide">
           DMIT - A Complete Guide to Talent & Intelligence Analysis
@@ -1203,6 +1191,14 @@ document.addEventListener("DOMContentLoaded", () => {
       </h3>
     </article>
 
+    <!-- Blog Post 2 -->
+    <article class="bg-white p-6 rounded-2xl shadow transition-shadow duration-300 hover:shadow-xl transform motion-safe:hover:scale-105 cursor-pointer">
+      <h3 class="text-2xl font-semibold text-indigo-600 hover:underline">
+        <a href="blog-swap-screen-for-stories.html" target="_blank" rel="noopener noreferrer" aria-label="Read Blog: Swap Screens for Stories">
+          Swap Screens for Stories: Creative Ways to Make Kids Fall in Love with Reading.
+        </a>
+      </h3>
+    </article>
   </div>
 </section>
 
