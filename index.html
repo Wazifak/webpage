@@ -176,8 +176,10 @@
   }
 </style>
 
+<!-- Navbar -->
 <nav class="bg-white/80 backdrop-blur-md shadow-sm py-4 px-6 md:px-12 lg:px-24 sticky top-0 z-50">
   <div class="container mx-auto flex justify-between items-center">
+    
     <!-- Logo -->
     <a href="#home" class="flex items-center space-x-2">
       <img src="cropped_circle_image.png" alt="InnoVigyan Logo" class="h-12 w-12" />
@@ -187,15 +189,15 @@
     </a>
 
     <!-- Desktop Menu -->
-    <div class="hidden md:flex space-x-8 font-medium text-gray-700" role="navigation" aria-label="Primary navigation">
-      <a href="#home" class="hover:text-indigo-600 transition focus:outline-none focus:ring-2 focus:ring-indigo-600 rounded">Home</a>
-      <a href="#about" class="hover:text-indigo-600 transition focus:outline-none focus:ring-2 focus:ring-indigo-600 rounded">About Us</a>
-      <a href="#programs" class="hover:text-indigo-600 transition focus:outline-none focus:ring-2 focus:ring-indigo-600 rounded">Programs</a>
-      <a href="#glimpses" class="hover:text-indigo-600 transition focus:outline-none focus:ring-2 focus:ring-indigo-600 rounded">Gallery</a>
-      <a href="#testimonials" class="hover:text-indigo-600 transition focus:outline-none focus:ring-2 focus:ring-indigo-600 rounded">Testimonials</a>
-      <a href="#blog" class="hover:text-indigo-600 transition focus:outline-none focus:ring-2 focus:ring-indigo-600 rounded">Blogs</a>
-      <a href="#contact" class="hover:text-indigo-600 transition focus:outline-none focus:ring-2 focus:ring-indigo-600 rounded">Contact</a>
-    </div>
+  <div class="hidden md:flex space-x-8 font-medium text-gray-700" role="navigation" aria-label="Primary navigation">
+    <a href="#home" class="hover:text-indigo-600 transition">Home</a>
+    <a href="#about" class="hover:text-indigo-600 transition">About Us</a>
+    <a href="#programs" class="hover:text-indigo-600 transition">Programs</a>
+    <a href="#glimpses" class="hover:text-indigo-600 transition">Gallery</a>
+    <a href="#testimonials" class="hover:text-indigo-600 transition">Testimonials</a>
+    <a href="#blog" class="hover:text-indigo-600 transition">Blogs</a>
+    <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+  </div>
 
     <!-- Mobile Menu Button -->
     <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-indigo-600 focus:outline-none p-2 rounded-md hover:bg-gray-100 transition duration-300" aria-label="Toggle navigation menu">
@@ -206,7 +208,7 @@
   </div>
 
   <!-- Mobile Menu (hidden by default) -->
-  <div id="mobile-menu" class="hidden md:hidden mt-4 bg-white rounded-lg shadow-lg py-2 space-y-1">
+  <div id="mobile-menu" class="hidden md:hidden mt-4 bg-white rounded-lg shadow-lg py-2">
     <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md transition duration-300">Home</a>
     <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md transition duration-300">About Us</a>
     <a href="#programs" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md transition duration-300">Programs</a>
@@ -215,15 +217,6 @@
     <a href="#blog" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md transition duration-300">Blogs</a>
     <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-md transition duration-300">Contact</a>
   </div>
-
-  <script>
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
 </nav>
 
 <!-- Hero Section -->
