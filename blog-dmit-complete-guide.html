@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DMIT - Complete Guide</title>
+  <title>DMIT Test Pune | Study Skills Training | InnoVigyan</title>
+  <meta name="description" content="Discover your inborn talents with DMIT Test by InnoVigyan Pune. Improve learning, career guidance, creativity, and emotional intelligence.">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 <body class="flex flex-col min-h-full bg-gray-50 text-gray-800 font-sans">
 
   <!-- Close Button -->
-  <a href="index.html"
+  <a href="index2.html"
      class="absolute top-6 right-6 text-gray-600 hover:text-red-600 text-4xl font-bold z-50 transition-transform duration-300 transform hover:scale-125 hover:rotate-90">
     &times;
   </a>
@@ -30,7 +31,8 @@
 
   <!-- Main Content -->
   <main class="flex-grow w-full px-6 md:px-12 lg:px-24 py-16 space-y-20 overflow-y-auto max-w-full">
-      
+
+    <!-- Introduction -->
     <section>
       <h2 class="text-3xl font-bold text-indigo-700 mb-8 text-center">Introduction</h2>
       <p class="text-lg text-gray-700 leading-relaxed max-w-full mx-auto text-left">
@@ -42,6 +44,7 @@
       </p>
     </section>
 
+    <!-- What Exactly is DMIT -->
     <section>
       <h2 class="text-3xl font-bold text-indigo-700 mb-6 flex items-center gap-2 justify-center">
         <span class="material-icons align-middle">science</span> What Exactly is DMIT?
@@ -56,17 +59,19 @@
       </ul>
     </section>
 
+    <!-- Science Behind DMIT -->
     <section>
       <h2 class="text-3xl font-bold text-indigo-700 mb-6 flex items-center gap-2 justify-center">
         <span class="material-icons align-middle">psychology</span> The Science Behind DMIT
       </h2>
       <ol class="list-decimal pl-6 mt-4 space-y-2 text-lg text-gray-700 max-w-full mx-auto text-left">
-        <li><strong>Neuroscience</strong> Brain development and fingerprint correlation</li>
-        <li><strong>Psychology</strong> Gardner's theory of multiple intelligences</li>
-        <li><strong>Genetics</strong> DNA uniqueness influencing natural abilities</li>
+        <li><strong>Neuroscience:</strong> Brain development and fingerprint correlation</li>
+        <li><strong>Psychology:</strong> Gardner's theory of multiple intelligences</li>
+        <li><strong>Genetics:</strong> DNA uniqueness influencing natural abilities</li>
       </ol>
     </section>
 
+    <!-- Fingerprints & Brain Connection -->
     <section class="bg-indigo-50 p-8 rounded-xl shadow-md max-w-full">
       <h2 class="text-3xl font-bold text-indigo-700 mb-6 flex items-center gap-2 justify-center">
         <span class="material-icons align-middle">search</span> Fingerprints & Brain Connection
@@ -85,6 +90,7 @@
       </p>
     </section>
 
+    <!-- Who Can Benefit -->
     <section>
       <h2 class="text-3xl font-bold text-indigo-700 mb-8 justify-center flex items-center gap-2">
         👨‍👩‍👧 Who Can Benefit from DMIT?
@@ -123,28 +129,86 @@
       </div>
     </section>
 
+    <!-- Collapsible Key Benefits -->
     <section>
       <h2 class="text-3xl font-bold text-indigo-700 mb-6 justify-center flex items-center gap-2">
         <span class="material-icons align-middle">flag</span> Key Benefits of DMIT
       </h2>
-      <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 max-w-full mx-auto text-left">
-        <li>Identify natural gifts without trial & error.</li>
-        <li>Understand your best learning style.</li>
-        <li>Improve focus, memory & study techniques.</li>
-        <li>Strengthen family bonding & communication.</li>
-        <li>Build resilience and emotional balance.</li>
-        <li>Make career choices with confidence.</li>
-        <li>Enhance creativity, productivity, and self-awareness.</li>
-        <li>Reduce stress and improve work-life balance.</li>
+      <ul class="list-disc pl-6 space-y-4 text-lg text-gray-700 max-w-full mx-auto text-left">
+        <li>
+          <button class="w-full text-left font-semibold text-indigo-600 hover:underline focus:outline-none" onclick="toggleDetails('benefit1')">
+            Identify natural gifts without trial & error
+          </button>
+          <p id="benefit1" class="mt-2 text-gray-800 hidden">
+            DMIT helps reveal your innate talents using fingerprint analysis. Know your strengths early and avoid guesswork.
+          </p>
+        </li>
+        <li>
+          <button class="w-full text-left font-semibold text-indigo-600 hover:underline focus:outline-none" onclick="toggleDetails('benefit2')">
+            Understand your best learning style
+          </button>
+          <p id="benefit2" class="mt-2 text-gray-800 hidden">
+            Discover whether you learn best visually, auditorily, or kinesthetically, and adapt your study techniques.
+          </p>
+        </li>
+        <li>
+          <button class="w-full text-left font-semibold text-indigo-600 hover:underline focus:outline-none" onclick="toggleDetails('benefit3')">
+            Improve focus, memory & study techniques
+          </button>
+          <p id="benefit3" class="mt-2 text-gray-800 hidden">
+            DMIT results suggest methods to enhance concentration, memory retention, and efficient study habits.
+          </p>
+        </li>
+        <li>
+          <button class="w-full text-left font-semibold text-indigo-600 hover:underline focus:outline-none" onclick="toggleDetails('benefit4')">
+            Strengthen family bonding & communication
+          </button>
+          <p id="benefit4" class="mt-2 text-gray-800 hidden">
+            Gain insights into your child’s strengths and personality, improving understanding and reducing conflicts.
+          </p>
+        </li>
+        <li>
+          <button class="w-full text-left font-semibold text-indigo-600 hover:underline focus:outline-none" onclick="toggleDetails('benefit5')">
+            Build resilience and emotional balance
+          </button>
+          <p id="benefit5" class="mt-2 text-gray-800 hidden">
+            Learn strategies to manage stress, face challenges, and maintain emotional well-being.
+          </p>
+        </li>
+        <li>
+          <button class="w-full text-left font-semibold text-indigo-600 hover:underline focus:outline-none" onclick="toggleDetails('benefit6')">
+            Make career choices with confidence
+          </button>
+          <p id="benefit6" class="mt-2 text-gray-800 hidden">
+            Align your career path with your natural skills and intelligence for better satisfaction and success.
+          </p>
+        </li>
+        <li>
+          <button class="w-full text-left font-semibold text-indigo-600 hover:underline focus:outline-none" onclick="toggleDetails('benefit7')">
+            Enhance creativity, productivity, and self-awareness
+          </button>
+          <p id="benefit7" class="mt-2 text-gray-800 hidden">
+            Unlock your creative potential and improve productivity by understanding your natural strengths.
+          </p>
+        </li>
+        <li>
+          <button class="w-full text-left font-semibold text-indigo-600 hover:underline focus:outline-none" onclick="toggleDetails('benefit8')">
+            Reduce stress and improve work-life balance
+          </button>
+          <p id="benefit8" class="mt-2 text-gray-800 hidden">
+            DMIT insights help manage workload and stress by aligning tasks with your natural abilities.
+          </p>
+        </li>
       </ul>
     </section>
 
+    <!-- Call to Action -->
     <section class="bg-indigo-600 text-white p-10 rounded-2xl shadow-md text-center max-w-full mx-auto">
       <h2 class="text-3xl font-bold mb-4">🚀 Ready to Discover Your True Potential?</h2>
       <p class="mb-6 text-lg max-w-full mx-auto">
         DMIT is more than a test — it's a life-changing tool for self-discovery. Take the first step today with InnoVigyan.
       </p>
-      <a href="index.html#contact" class="inline-block bg-indigo-700 hover:bg-indigo-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition">
+      <a href="index2.html#contact" class="inline-block bg-indigo-700 hover:bg-indigo-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition">
         Contact Us Now
       </a>
     </section>
@@ -152,8 +216,15 @@
   </main>
 
   <footer class="bg-gray-100 text-center p-6 text-gray-500 flex-shrink-0">
-    &copy;InnoVigyan. All rights reserved.
+    &copy; InnoVigyan. All rights reserved.
   </footer>
+
+  <script>
+    function toggleDetails(id) {
+      const element = document.getElementById(id);
+      element.classList.toggle('hidden');
+    }
+  </script>
 
 </body>
 </html>
