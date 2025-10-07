@@ -1,4 +1,4 @@
-# InnoVigyan Website
+# InnoVigyan 
 
 Welcome to the official **InnoVigyan** website repository. This project hosts the codebase for the InnoVigyan educational and career guidance platform, offering innovative programs including DMIT testing, study skills training, psychometric assessments, career counseling, and more.
 
